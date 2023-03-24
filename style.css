@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    color: rgb(30, 35, 35);
+}
+
+body {
+    height: 100%;
+    background-image: url(./images/marlon-iWVGbTiIQXo-unsplash.jpg);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+    height: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+.inputes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+img {
+    width: 200px;
+    height: 80px;
+    opacity: 0.5;
+}
+
+label, input {
+    display: block;
+    height: 20px;
+    width: 150px;
+}
