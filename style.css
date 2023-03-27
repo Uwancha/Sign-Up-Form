@@ -11,52 +11,79 @@ html {
 
 body {
     height: 100%;
-    background-image: url(./images/marlon-iWVGbTiIQXo-unsplash.jpg);
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    justify-content: center;
     gap: 10px;
+    height: 100%;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.logo p {
+    color: azure;
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 
 .form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    gap: 10px;
+    height: 100%;
     background-color: whitesmoke;
 }
 
 .title {
     display: flex;
-    flex-direction: column;
-    gap: 10px ;
     height: 30%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    padding: 1.5rem;
 }
+
 
 form {
     display: flex;
     flex-direction: column;
-    height: 70%;
+    box-shadow: 1px 1px 15px #1c1c1a;
+    padding: 1.5rem;
 }
 
-.inputes {
+
+form div {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-
+    gap: 1rem;
+    
 }
+
+.submission {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 1.5rem;
+    gap: 10px;
+}
+
+
 
 img {
     width: 200px;
@@ -67,5 +94,49 @@ img {
 label, input {
     display: block;
     height: 20px;
-    width: 150px;
+    width: 200px;
+}
+
+label {
+    margin-top: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+    main {
+        display: flex;
+        height: 100%;
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        height: 100%;
+        background-color: whitesmoke;
+        position: absolute;
+        right: 0;
+        width: 60%;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        width: 40%;
+        
+    }
+
+    form div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        
+    }
+    
 }
