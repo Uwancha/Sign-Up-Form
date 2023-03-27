@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "logo font";
+    src: url(fonts/Norse-Bold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,15 +36,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.4); 
     width: 100%;
-    padding: 0.5rem;
+
 }
 
-.logo p {
+    
+ .logo p{
+    font-family: "logo font", serif;
     color: azure;
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 5.5rem;
 }
 
 
@@ -51,18 +59,22 @@ main {
 
 .title {
     display: flex;
-    height: 30%;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 1rem;
     flex-direction: column;
     align-content: center;
-    padding: 1.5rem;
+    padding: 0 2.5rem 0 1.5rem;
+    margin-top: 10.8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 
 form {
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 1px 15px #1c1c1a;
+    background-color: white;
+    box-shadow: 0px 0px 7px #1c1c1a;
     padding: 1.5rem;
 }
 
@@ -78,17 +90,26 @@ form div {
 .submission {
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-content: space-between;
     padding: 1.5rem;
     gap: 10px;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: .4rem 1.9rem;
+    font-size: large;
+    color: rgba(240, 255, 255, 0.948);
+    background-color: #596D48;
+    border-radius: .5rem;
 }
 
 
 
 img {
-    width: 200px;
-    height: 80px;
-    opacity: 0.5;
+    width: 100px;
+    height: 100%;
 }
 
 label, input {
@@ -126,7 +147,7 @@ label {
         justify-content: center;
         position: absolute;
         left: 0;
-        top: 5rem;
+        top: 12rem;
         width: 40%;
         
     }
