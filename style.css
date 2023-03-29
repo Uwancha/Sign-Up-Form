@@ -13,7 +13,7 @@
 
 html {
     height: 100%;
-    color: rgb(30, 35, 35);
+   /* color: rgb(30, 35, 35); */
 }
 
 body {
@@ -52,7 +52,7 @@ main {
 .form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     height: 100%;
     background-color: whitesmoke;
 }
@@ -63,9 +63,9 @@ main {
     gap: 1rem;
     flex-direction: column;
     align-content: center;
-    padding: 0 2.5rem 0 1.5rem;
-    margin-top: 10.8rem;
-    font-size: 1.5rem;
+    padding: 0 2.5rem 0 2.5rem;
+    margin-top: .8rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -75,7 +75,8 @@ form {
     flex-direction: column;
     background-color: white;
     box-shadow: 0px 0px 7px #1c1c1a;
-    padding: 1.5rem;
+    padding: 2rem;
+    gap: .5rem;
 }
 
 
@@ -92,7 +93,7 @@ form div {
     flex-direction: column;
     flex: 1;
     align-content: space-between;
-    padding: 1.5rem;
+    padding: 0 0 0 1.5rem;
     gap: 10px;
     margin-bottom: 2rem;
 }
@@ -100,11 +101,22 @@ form div {
 button {
     padding: .4rem 1.9rem;
     font-size: large;
-    color: rgba(240, 255, 255, 0.948);
-    background-color: #596D48;
+    color: rgba(240, 255, 255, 0.5);
+    background-color: rgb(89, 109, 72);
     border-radius: .5rem;
 }
 
+button:hover {
+    color: rgba(240, 255, 255);
+}
+
+span {
+    color: rgb(255, 0, 0, .6);
+}
+
+span:hover {
+    color: rgb(255, 0, 0);
+}
 
 
 img {
@@ -118,9 +130,49 @@ label, input {
     width: 200px;
 }
 
-label {
-    margin-top: 0px;
+input {
+    outline: none;
 }
+
+label {
+    margin-top: px;
+}
+
+input {
+    border-radius: 5px;
+    border: solid #E5E7EB;
+}
+
+:focus{
+    outline: 0;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
+    border-color: #dadcc4;
+    box-shadow: 1px 1px 5px #2c2929;
+}
+
+input[type="password"]:invalid{
+    border-color: red;
+}
+
+input + span {
+    position: relative;
+  }
+
+
+input:invalid + span::after {
+    content: "*Passwords do not match";
+    color: red;
+    font-size: 10px;
+    position:absolute;
+    width: 120px;
+  }
+
+input:valid {
+    border-color: green;
+}
+
 
 @media only screen and (min-width: 700px) {
     main {
@@ -133,7 +185,7 @@ label {
     .form {
         display: flex;
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 3.5rem;
         height: 100%;
         background-color: whitesmoke;
         position: absolute;
@@ -152,12 +204,26 @@ label {
         
     }
 
+    .title {
+        margin-top: 8rem;
+    }
+
+    form {
+        height: 40%;
+        flex: 1;
+        padding: 2.5rem;
+    }
+    
     form div {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 3rem;
         
+    }
+
+    label, input {
+        height: 25px;
     }
     
 }

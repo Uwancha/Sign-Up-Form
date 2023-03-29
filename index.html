@@ -35,16 +35,16 @@
                 
             <form action="#" method="post">
 
-                <h4>Let's do this!</h4>
+                <h3>Let's do this!</h3>
                 
                     <div>
                         <p>
                             <label for="fstname">First Name:</label>
-                            <input type="text" id="fstname" name="fstname" required>
+                            <input type="text" id="fstname" name="fstname" autocomplete="cc-number" required>
                         </p>
                         <p>
                             <label for="lstname">Last Name:</label>
-                            <input type="text" id="lstname" name="lstname" required>
+                            <input type="text" id="lstname" name="lstname" autocomplete="cc-number" required>
                         </p>
                     </div>
                     <div>
@@ -54,17 +54,18 @@
                         </p>
                         <p>
                             <label for="phonenum">Phone Number:</label>
-                            <input type="tel" id="phonenum" name="phonenum" required>
+                            <input type="tel" id="phonenum" name="phonenum" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" autocomplete="cc-number" required>
                         </p>
                     </div>
                     <div> 
                         <p>
                             <label for="pwd">Password:</label>
-                            <input type="password" id="pwd" name="pwd" required>
+                            <input type="password" id="pwd" name="pwd" min="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  required>
+                            <span></span>
                         </p>
                         <p>
                             <label for="conpwd">Conform Password:</label>
-                            <input type="password" id="conpwd" name="conpwd" required>
+                            <input type="password" id="conpwd" min="8" name="conpwd" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                         </p>
                     </div>
         
@@ -75,7 +76,7 @@
                     <button type="submit">Create an account</button>
                     </div>
                     <div>
-                        <p>Already have an account? </span>Log in</span></p>
+                        <p>Already have an account? <span>Log in</span></p>
                     </div>
                 </div>
             
