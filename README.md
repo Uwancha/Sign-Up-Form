@@ -15,4 +15,4 @@ The design for this project was given with some requirements and flexiblity to u
 
 # Live demo
 
-![Here's the live demo](https://uwancha.github.io/Sign-Up-Form/)
+[Here's the live demo](https://uwancha.github.io/Sign-Up-Form/)
